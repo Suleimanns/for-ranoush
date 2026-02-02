@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Forever ??</title>
+<title>Forever ❤️</title>
 
 <style>
     body {
@@ -12,7 +12,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #5a0f2e; /* burgundy */
+        background: #b11226; /* RED */
         font-family: Arial, sans-serif;
     }
 
@@ -27,14 +27,17 @@
     }
 
     .emoji {
-        font-size: 64px;
-        margin-bottom: 15px;
+        font-size: 34px;
+        font-family: monospace;
+        margin-bottom: 18px;
+        color: #b11226;
+        white-space: pre;
     }
 
     h2 {
         margin: 0 0 35px;
         font-weight: 600;
-        color: #5a0f2e;
+        color: #b11226;
     }
 
     .buttons {
@@ -53,7 +56,7 @@
     }
 
     #yesBtn {
-        background: #7b173f;
+        background: #e01932;
         color: #fff;
         left: 50%;
         transform: translateX(-50%);
@@ -86,7 +89,9 @@
 <body>
 
 <div class="card">
-    <div class="emoji">??�???</div>
+<div class="emoji">🦄</div>
+
+
     <h2>Will you be my love forever, Ranoushti?</h2>
 
     <div class="buttons">
@@ -118,19 +123,14 @@
         noBtn.style.top  = randY + "px";
     }
 
-    // Desktop
-    noBtn.addEventListener("mouseenter", moveNo);
-
-    // Mobile
-    noBtn.addEventListener("touchstart", moveNo);
-
-    // Backup
-    noBtn.addEventListener("click", moveNo);
+    noBtn.addEventListener("mouseenter", moveNo);   // desktop
+    noBtn.addEventListener("touchstart", moveNo);  // mobile
+    noBtn.addEventListener("click", moveNo);       // fallback
 
     yesBtn.addEventListener("click", () => {
         buttons.style.display = "none";
         result.style.display = "block";
-        title.innerText = "Forever it is ????";
+        title.innerText = "Forever it is ❤️";
     });
 </script>
 
